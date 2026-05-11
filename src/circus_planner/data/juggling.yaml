@@ -1,0 +1,1175 @@
+equipment:
+  - id: russians
+    name: "75mm Norwik Russians"
+    prop_type: ball
+    quantity: 4
+    default: true
+
+  - id: beanbags
+    name: "Juggle Dream 120g Thud Beanbags"
+    prop_type: ball
+    quantity: 9
+
+  - id: 500g_balls
+    name: "Mr Babache 500g Balls"
+    prop_type: ball
+    quantity: 4
+
+  - id: clubs
+    name: "Juggle Dream Trainer Street Clubs"
+    prop_type: club
+    quantity: 3
+    default: true
+
+  - id: rings
+    name: "Juggle Dream Standard Rings"
+    prop_type: ring
+    quantity: 3
+    default: true
+
+  - id: rolla_bolla
+    name: "Rolla Bolla"
+    prop_type: balance
+
+  - id: bosu_ball
+    name: "Bosu Ball"
+    prop_type: balance
+
+  - id: slackboard
+    name: "Slackboard"
+    prop_type: balance
+
+  - id: dance_hoop
+    name: "Dance Hula Hoop"
+    prop_type: other
+
+  - id: weighted_hoop
+    name: "Weighted Hula Hoop"
+    prop_type: other
+
+  - id: snooker_cue
+    name: "Snooker Cue"
+    prop_type: other
+
+  - id: mallet
+    name: "Mallet"
+    prop_type: other
+
+  - id: sweeping_brush
+    name: "Sweeping Brush"
+    prop_type: other
+
+  - id: rubiks_cube
+    name: "Rubik's Cube"
+    prop_type: other
+
+  - id: mirror_cube
+    name: "3x3 Mirror Cube"
+    prop_type: other
+
+  - id: rubiks_cube_4x4
+    name: "4x4 Rubik's Cube"
+    prop_type: other
+
+  - id: unicycle
+    name: "Unicycle"
+    prop_type: other
+
+
+modifiers:
+  # ── Style ────────────────────────────────────────────
+  - id: blind
+    name: "Blind"
+
+  - id: walking
+    name: "Walking"
+
+  - id: circles
+    name: "Circles"
+
+  - id: high_throws
+    name: "High throws"
+
+  - id: long_dwell
+    name: "Long dwell"
+
+  - id: short_dwell
+    name: "Short dwell"
+
+  - id: claw_catches
+    name: "Claw catches"
+
+  - id: left_hand
+    name: "Left hand"
+
+  - id: right_hand
+    name: "Right hand"
+
+  - id: alternate_hands
+    name: "Alternate hands"
+
+  - id: left_hand_start
+    name: "Left hand start"
+
+  - id: flash
+    name: "Flash"
+
+  - id: continuous
+    name: "Continuous"
+
+  - id: reverse
+    name: "Reverse"
+
+  - id: synchronous
+    name: "Synchronous"
+
+  - id: asynchronous
+    name: "Asynchronous"
+
+  - id: rolling_in
+    name: "Rolling in"
+
+  - id: rolling_in_left_hand
+    name: "Rolling in, left hand"
+
+  - id: rolling_in_right_hand
+    name: "Rolling in, right hand"
+
+  - id: rolling_in_alternate_hands
+    name: "Rolling in, alternate hands"
+
+  - id: double_spins
+    name: "Double spins"
+
+  - id: left_hand_start_double_spins
+    name: "Left hand start, double spins"
+
+  - id: squat
+    name: "Squat"
+
+  - id: eyes_closed
+    name: "Eyes closed"
+
+  - id: look_up
+    name: "Look up"
+
+  - id: static_third_ball
+    name: "Static third ball"
+
+  - id: swap_heights
+    name: "Swap heights"
+
+  - id: alternate_heights
+    name: "Alternate heights"
+
+  - id: async
+    name: "Async"
+
+  - id: left_foot
+    name: "Left foot"
+
+  - id: right_foot
+    name: "Right foot"
+
+  - id: squat_left_foot
+    name: "Squat, left foot"
+
+  - id: squat_right_foot
+    name: "Squat, right foot"
+
+  - id: both_feet
+    name: "Both feet"
+
+  - id: sideways
+    name: "Sideways"
+
+  - id: nose_fakie
+    name: "Nose fakie"
+
+  - id: forehead
+    name: "Forehead"
+
+  - id: nose
+    name: "Nose"
+
+  - id: chin
+    name: "Chin"
+
+  - id: shoulder
+    name: "Shoulder"
+
+  - id: elbow
+    name: "Elbow"
+
+  - id: back_of_hand
+    name: "Back of hand"
+
+  - id: top_of_foot
+    name: "Top of foot"
+
+  - id: left_leg
+    name: "Left leg"
+
+  - id: right_leg
+    name: "Right leg"
+
+  - id: alternate_legs
+    name: "Alternate legs"
+
+  - id: alternate_regular_columns
+    name: "Alternate regular columns"
+
+  - id: mirror_cube
+    name: "Mirror cube"
+
+  - id: with_flashes
+    name: "With flashes"
+
+  - id: with_continuous_flashes
+    name: "With continuous flashes"
+
+  - id: with_flashes_left_hand_start
+    name: "With flashes, left hand start"
+
+  - id: include_1_ball
+    name: "Include 1 ball"
+
+  - id: include_2_balls
+    name: "Include 2 balls"
+
+  - id: include_1_ring
+    name: "Include 1 ring"
+
+  - id: include_2_rings
+    name: "Include 2 rings"
+
+  - id: one_ring_one_ball_one_club
+    name: "1 ring, 1 ball, 1 club"
+
+  - id: ball_over_the_top
+    name: "Ball over the top"
+
+  - id: two_balls_under
+    name: "2 balls under"
+
+  - id: blind_left_hand
+    name: "Blind, left hand"
+
+  - id: blind_right_hand
+    name: "Blind, right hand"
+
+  - id: while_juggling_1_ball
+    name: "While juggling 1 ball"
+
+  - id: while_juggling_cascade
+    name: "While juggling cascade"
+
+  # ── Equipment modifiers ──────────────────────────────
+  - id: on_rolla_bolla
+    name: "On rolla bolla"
+    requires_equipment: [rolla_bolla]
+    additive: true
+
+  - id: on_rolla_bolla_surfer_right
+    name: "On rolla bolla (surfer), right foot leading"
+    requires_equipment: [rolla_bolla]
+    additive: true
+
+  - id: on_rolla_bolla_surfer_left
+    name: "On rolla bolla (surfer), left foot leading"
+    requires_equipment: [rolla_bolla]
+    additive: true
+
+  - id: on_bosu_ball
+    name: "On bosu ball"
+    requires_equipment: [bosu_ball]
+    additive: true
+
+  - id: on_bosu_ball_inverted
+    name: "On bosu ball, inverted"
+    requires_equipment: [bosu_ball]
+    additive: true
+
+  - id: on_slackboard
+    name: "On slackboard"
+    requires_equipment: [slackboard]
+    additive: true
+
+  - id: ball_on_head
+    name: "Ball on head"
+    requires_equipment_type: ball
+    requires_quantity: 1
+
+  - id: with_500g_balls
+    name: "With 500g balls"
+    requires_equipment: [500g_balls]
+
+  - id: with_1_ball
+    name: "With 1 ball"
+    requires_equipment_type: ball
+    requires_quantity: 1
+
+  - id: with_2_balls
+    name: "With 2 balls"
+    requires_equipment_type: ball
+    requires_quantity: 2
+
+  - id: with_3_balls
+    name: "With 3 balls"
+    requires_equipment_type: ball
+    requires_quantity: 3
+
+  - id: with_1_ring
+    name: "With 1 ring"
+    requires_equipment_type: ring
+    requires_quantity: 1
+
+  - id: with_2_rings
+    name: "With 2 rings"
+    requires_equipment_type: ring
+    requires_quantity: 2
+
+  - id: with_3_rings
+    name: "With 3 rings"
+    requires_equipment_type: ring
+    requires_quantity: 3
+
+  - id: with_1_club
+    name: "With 1 club"
+    requires_equipment_type: club
+    requires_quantity: 1
+
+  - id: with_2_clubs
+    name: "With 2 clubs"
+    requires_equipment_type: club
+    requires_quantity: 2
+
+  - id: with_3_clubs
+    name: "With 3 clubs"
+    requires_equipment_type: club
+    requires_quantity: 3
+
+  - id: use_club
+    name: "Use club"
+    requires_equipment_type: club
+    requires_quantity: 1
+
+  - id: use_ring
+    name: "Use ring"
+    requires_equipment_type: rings
+    requires_quantity: 1
+
+  - id: use_hula_hoop
+    name: "Use hula hoop"
+    requires_equipment: [dance_hoop, weighted_hoop]
+
+  - id: use_snooker_cue
+    name: "Use snooker cue"
+    requires_equipment: [snooker_cue]
+
+  - id: use_mallet
+    name: "Use mallet"
+    requires_equipment: [mallet]
+
+  - id: use_sweeping_brush
+    name: "Use sweeping brush"
+    requires_equipment: [sweeping_brush]
+
+  - id: use_4x4_cube
+    name: "4x4 cube"
+    requires_equipment: [rubiks_cube_4x4]
+
+  - id: use_mirror_cube
+    name: "Mirror cube"
+    requires_equipment: [mirror_cube]
+
+  - id: surfer_stance_left
+    name: "Surfer stance, left foot forward"
+
+  - id: surfer_stance_right
+    name: "Surfer stance, right foot forward"
+
+
+exercises:
+  # ── 3-ball ───────────────────────────────────────────
+  - id: three_ball_cascade
+    name: "3 Ball Cascade"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 9
+    priority: 0
+    modifiers:
+      - blind
+      - long_dwell
+      - short_dwell
+      - walking
+      - circles
+      - claw_catches
+      - ball_on_head
+      - squat
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_ball_half_shower
+    name: "3 Ball Half Shower"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 8
+    priority: 0
+    modifiers:
+      - walking
+      - circles
+      - left_hand
+      - synchronous
+      - ball_on_head
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_ball_shower
+    name: "3 Ball Shower"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 5
+    priority: 0
+    modifiers:
+      - left_hand
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_ball_tennis
+    name: "3 Ball Tennis"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 8
+    priority: 0
+    modifiers:
+      - walking
+      - circles
+      - high_throws
+      - reverse
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_ball_columns
+    name: "3 Ball Columns"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 5
+    priority: 0
+    modifiers:
+      - left_hand
+      - right_hand
+      - alternate_hands
+      - static_third_ball
+      - swap_heights
+      - async
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_ball_columns_snatch_catch
+    name: "3 Ball Columns Snatch Catch"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 1
+    priority: 0
+    description: "Like columns except grab with palm down and lift up. Cursed."
+
+  - id: three_ball_reverse_cascade
+    name: "3 Ball Reverse Cascade"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 4
+    priority: 0
+    modifiers:
+      - ball_on_head
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_ball_fake_columns
+    name: "3 Ball Fake Columns"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 5
+    priority: 0
+    always_modify: true
+    modifiers:
+      - left_hand
+      - right_hand
+      - alternate_hands
+      - alternate_regular_columns
+      - swap_heights
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: yo_yo
+    name: "Yo-Yo"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 3
+    priority: 0
+    always_modify: true
+    modifiers:
+      - left_hand
+      - right_hand
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: oy_oy
+    name: "Oy-Oy"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 2
+    priority: 0
+    always_modify: true
+    modifiers:
+      - left_hand
+      - right_hand
+
+  - id: siteswap_423
+    name: "423"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 5
+    priority: 0
+    modifiers:
+      - reverse
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_441
+    name: "441"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 4
+    priority: 0
+    modifiers:
+      - reverse
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_531
+    name: "531"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 4
+    priority: 7
+    practicing: true
+    modifiers:
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_522
+    name: "522"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 3
+    priority: 0
+    modifiers:
+      - reverse
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_606060
+    name: "606060"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 3
+    priority: 5
+    practicing: true
+    modifiers:
+      - left_hand
+      - right_hand
+
+  - id: siteswap_55500
+    name: "55500"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 2
+    priority: 5
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - left_hand
+
+  - id: siteswap_5_1x1_4x4
+    name: "5(1x1)(4x4)"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 2
+    priority: 0
+
+  - id: ping_pong_cascade
+    name: "Ping Pong Cascade"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 1
+    priority: 0
+
+  - id: three_ball_mills_mess
+    name: "3 Ball Mills Mess"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 1
+    priority: 9
+    practicing: true
+    high_priority: true
+
+  - id: three_ball_behind_the_back
+    name: "3 Ball Behind the Back"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 1
+    priority: 5
+    practicing: true
+    always_modify: true
+    modifiers:
+      - left_hand
+      - right_hand
+      - alternate_hands
+
+  - id: three_ball_neck_catch
+    name: "3 Ball Neck Catch"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 1
+    priority: 5
+    practicing: true
+
+  - id: three_ball_under_the_leg
+    name: "3 Ball Under the Leg"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 5
+    priority: 0
+    always_modify: true
+    modifiers:
+      - left_leg
+      - right_leg
+      - alternate_legs
+      - with_500g_balls
+
+  - id: siteswap_4040_balls
+    name: "4040"
+    prop_type: ball
+    quantity_needed: 2
+    comfort: 5
+    priority: 0
+    always_modify: true
+    modifiers:
+      - blind_left_hand
+      - blind_right_hand
+      - left_hand
+      - right_hand
+      - alternate_hands
+      - rolling_in_left_hand
+      - rolling_in_right_hand
+      - rolling_in_alternate_hands
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_4440
+    name: "4440"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 4
+    priority: 0
+    always_modify: true
+    modifiers:
+      - left_hand
+      - right_hand
+      - alternate_hands
+      - synchronous
+      - asynchronous
+      - rolling_in
+      - with_500g_balls
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  # ── 4-ball ───────────────────────────────────────────
+  - id: four_ball_fountain_async
+    name: "4 Ball Fountain (Async)"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 8
+    priority: 0
+    modifiers:
+      - left_hand_start
+      - rolling_in
+      - ball_on_head
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: four_ball_fountain_sync
+    name: "4 Ball Fountain (Sync)"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 4
+    priority: 0
+    modifiers:
+      - rolling_in
+      - ball_on_head
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: four_ball_columns
+    name: "4 Ball Columns"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 2
+    priority: 0
+    modifiers:
+      - async
+      - alternate_heights
+
+  - id: siteswap_552
+    name: "552"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 2
+    priority: 8
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_55550
+    name: "55550"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 2
+    priority: 5
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_534
+    name: "534"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 1
+    priority: 9
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - reverse
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_5551
+    name: "5551"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 1
+    priority: 5
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_633
+    name: "633"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 1
+    priority: 9
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - reverse
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: siteswap_741
+    name: "741"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 1
+    priority: 5
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: four_ball_53
+    name: "4-Ball 53"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 2
+    priority: 5
+    practicing: true
+    always_modify: true
+    modifiers:
+      - left_hand
+      - right_hand
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  # ── 5-ball ───────────────────────────────────────────
+  - id: five_ball_cascade
+    name: "5 Ball Cascade"
+    prop_type: ball
+    quantity_needed: 5
+    comfort: 1
+    priority: 10
+    practicing: true
+    modifiers:
+      - on_rolla_bolla
+
+  # ── 2-club ───────────────────────────────────────────
+  - id: siteswap_4040_clubs
+    name: "4040 (Clubs)"
+    prop_type: club
+    quantity_needed: 2
+    comfort: 2
+    priority: 5
+    practicing: true
+    always_modify: true
+    modifiers:
+      - left_hand
+      - alternate_hands
+
+  # ── 3-club ───────────────────────────────────────────
+  - id: three_club_cascade
+    name: "3 Club Cascade"
+    prop_type: club
+    quantity_needed: 3
+    comfort: 7
+    priority: 0
+    modifiers:
+      - walking
+      - circles
+      - double_spins
+      - with_flashes
+      - with_continuous_flashes
+      - with_flashes_left_hand_start
+      - include_1_ball
+      - include_2_balls
+      - include_1_ring
+      - include_2_rings
+      - one_ring_one_ball_one_club
+      - left_hand_start
+      - left_hand_start_double_spins
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_club_reverse_cascade
+    name: "3 Club Reverse Cascade"
+    prop_type: club
+    quantity_needed: 3
+    comfort: 4
+    priority: 5
+    practicing: true
+    modifiers:
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_club_tennis
+    name: "3 Club Tennis"
+    prop_type: club
+    quantity_needed: 3
+    comfort: 3
+    priority: 5
+    practicing: true
+    modifiers:
+      - ball_over_the_top
+      - two_balls_under
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
+  # ── 2-ring ───────────────────────────────────────────
+  - id: siteswap_4040_rings
+    name: "4040 (Rings)"
+    prop_type: ring
+    quantity_needed: 2
+    comfort: 2
+    priority: 0
+    always_modify: true
+    modifiers:
+      - left_hand
+      - right_hand
+      - alternate_hands
+
+  # ── 3-ring ───────────────────────────────────────────
+  - id: three_ring_cascade
+    name: "3 Ring Cascade"
+    prop_type: ring
+    quantity_needed: 3
+    comfort: 5
+    priority: 0
+    modifiers:
+      - walking
+      - circles
+      - with_flashes
+      - left_hand_start
+      - on_rolla_bolla
+      - on_rolla_bolla_surfer_right
+      - on_rolla_bolla_surfer_left
+      - on_bosu_ball
+      - on_slackboard
+
+  - id: three_ring_reverse_cascade
+    name: "3 Ring Reverse Cascade"
+    prop_type: ring
+    quantity_needed: 3
+    comfort: 4
+    priority: 0
+
+  - id: three_ring_tennis
+    name: "3 Ring Tennis"
+    prop_type: ring
+    quantity_needed: 3
+    comfort: 1
+    priority: 0
+    modifiers:
+      - ball_over_the_top
+      - two_balls_under
+
+  - id: three_ring_half_shower
+    name: "3 Ring Half Shower"
+    prop_type: ring
+    quantity_needed: 3
+    comfort: 4
+    priority: 0
+
+  # ── Balance ──────────────────────────────────────────
+  - id: rolla_bolla_endurance
+    name: "Rolla Bolla Endurance"
+    prop_type: balance
+    requires_equipment: [rolla_bolla]
+    comfort: 9
+    priority: 0
+    modifiers:
+      - squat
+      - surfer_stance_left
+      - surfer_stance_right
+      - look_up
+
+  - id: bosu_ball_endurance
+    name: "Bosu Ball Endurance"
+    prop_type: balance
+    requires_equipment: [bosu_ball]
+    comfort: 8
+    priority: 0
+    always_modify: true
+    modifiers:
+      - left_foot
+      - right_foot
+      - squat
+      - squat_left_foot
+      - squat_right_foot
+
+  - id: slackboard_endurance
+    name: "Slackboard Endurance"
+    prop_type: balance
+    requires_equipment: [slackboard]
+    comfort: 4
+    priority: 0
+    modifiers:
+      - left_foot
+      - right_foot
+      - both_feet
+      - sideways
+      - nose
+      - nose_fakie
+
+  - id: balance_object
+    name: "Balance Object"
+    prop_type: balance
+    requires_equipment: [snooker_cue, mallet, sweeping_brush, clubs, rings, dance_hoop, weighted_hoop]
+    comfort: 2
+    priority: 8
+    practicing: true
+    always_modify: true
+    modifiers:
+      - forehead
+      - nose
+      - chin
+      - shoulder
+      - elbow
+      - back_of_hand
+      - top_of_foot
+      - on_rolla_bolla
+      - on_bosu_ball
+
+  - id: unicycle_idling
+    name: "Unicycle Idling"
+    prop_type: balance
+    requires_equipment: [unicycle]
+    comfort: 1
+    priority: 5
+    practicing: true
+
+  - id: rolla_bolla_rubiks_cube
+    name: "Rolla Bolla Rubik's Cube"
+    prop_type: balance
+    requires_equipment: [rolla_bolla, rubiks_cube]
+    comfort: 5
+    priority: 0
+    description: "Solve a Rubik's Cube on the rolla bolla!"
+    modifiers:
+      - use_4x4_cube
+      - use_mirror_cube
+
+  # ── Flow ─────────────────────────────────────────────
+  - id: hula_hoop_waist
+    name: "Hula Hoop Waist"
+    prop_type: flow
+    requires_equipment: [dance_hoop, weighted_hoop]
+    comfort: 3
+    priority: 0
+    modifiers:
+      - eyes_closed
+      - while_juggling_1_ball
+      - while_juggling_cascade
+      - on_rolla_bolla
+      - on_slackboard
+      - on_bosu_ball
+
+  - id: hula_hoop_hand
+    name: "Hula Hoop Hand"
+    prop_type: flow
+    requires_equipment: [dance_hoop, weighted_hoop]
+    comfort: 1
+    priority: 0
+
+  - id: ankle_ring_spin
+    name: "Ankle Ring Spin"
+    prop_type: flow
+    comfort: 2
+    priority: 0
+    modifiers:
+      - with_1_ball
+      - with_2_balls
+      - with_3_balls
+
+
+drills:
+  - id: drill_left_hand_only
+    name: "Left Hand Only"
+    description: "Left hand fountain, right hand holds one ball - fix left hand form"
+    always_modify: true
+    active: true
+    modifiers:
+      - with_2_balls
+      - with_2_rings
+      - with_1_club
+
+  - id: drill_tilt_head
+    name: "Tilt Head"
+    always_modify: true
+    active: true
+    modifiers:
+      - with_3_balls
+      - with_3_clubs
+      - with_3_rings
+
+  - id: drill_blind_throws
+    name: "Blind Throws"
+    description: "Close eyes, position target, throw to target"
+    always_modify: true
+    active: true
+    modifiers:
+      - high_throws
+      - reverse
+      - with_1_ball
+      - with_2_balls
+      - with_3_balls
+      - with_1_ring
+      - with_2_rings
+      - with_3_rings
+      - with_1_club
+      - with_2_clubs
+      - with_3_clubs
+
+  - id: drill_sync_throw_same_height
+    name: "Sync Throw Same Height"
+    description: "Sync fountain - focus on catch and release at same height for both hands"
+    always_modify: false
+    active: true
+
+  - id: drill_sync_to_async_fountain
+    name: "Sync to Async Fountain"
+    description: "Start with sync fountain, transition to async - focus on smooth changeover"
+    always_modify: false
+    active: true
+
+  - id: drill_cascade_fix_left_catches
+    name: "Cascade Fix Left Catches"
+    description: "Focus on catching lower with left hand"
+    always_modify: true
+    active: false
+    modifiers:
+      - with_3_balls
+      - with_3_clubs
+      - with_3_rings
+
+
+global_modifiers:
+  - "Listen to music"
+  - "No headphones"

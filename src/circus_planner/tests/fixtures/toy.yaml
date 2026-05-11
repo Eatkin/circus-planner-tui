@@ -1,0 +1,158 @@
+equipment:
+  - id: russians
+    name: "75mm Norwik Russians"
+    prop_type: ball
+    quantity: 4
+    default: true
+
+  - id: beanbags
+    name: "Juggle Dream 120g Thud Beanbags"
+    prop_type: ball
+    quantity: 9
+
+  - id: clubs
+    name: "Juggle Dream Trainer Street Clubs"
+    prop_type: club
+    quantity: 3
+    default: true
+
+  - id: rings
+    name: "Juggle Dream Standard Rings"
+    prop_type: ring
+    quantity: 3
+    default: true
+
+  - id: rolla_bolla
+    name: "Rolla Bolla"
+    prop_type: balance
+
+  - id: unicycle
+    name: "Unicycle"
+    prop_type: other
+
+  - id: disabled_item
+    name: "Broken Thing"
+    prop_type: other
+    enabled: false
+
+
+modifiers:
+  - id: blind
+    name: "Blind"
+
+  - id: on_rolla_bolla
+    name: "On rolla bolla"
+    requires_equipment: [rolla_bolla]
+    additive: true
+
+  - id: left_hand
+    name: "Left hand"
+
+  - id: flash
+    name: "Flash"
+
+
+exercises:
+  # should always be available - no required equipment, 3 balls covered
+  - id: three_ball_cascade
+    name: "3 Ball Cascade"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 9
+    priority: 0
+    modifiers:
+      - blind
+      - on_rolla_bolla
+
+  # needs 5 balls - russians only have 4, beanbags have 9 so should be available
+  - id: five_ball_cascade
+    name: "5 Ball Cascade"
+    prop_type: ball
+    quantity_needed: 5
+    comfort: 1
+    priority: 10
+    practicing: true
+
+  # needs 5 balls but we'll use this to test disabling beanbags
+  - id: five_ball_cascade_test
+    name: "5 Ball Cascade (test)"
+    prop_type: ball
+    quantity_needed: 5
+    comfort: 1
+    priority: 10
+
+  # requires rolla bolla - should be available when enabled
+  - id: rolla_bolla_endurance
+    name: "Rolla Bolla Endurance"
+    prop_type: balance
+    requires_equipment: [rolla_bolla]
+    comfort: 9
+    priority: 0
+    modifiers:
+      - blind
+
+  # requires unicycle - should be available
+  - id: unicycle_idling
+    name: "Unicycle Idling"
+    prop_type: balance
+    requires_equipment: [unicycle]
+    comfort: 1
+    priority: 5
+    practicing: true
+
+  # requires disabled_item - should never be available
+  - id: broken_exercise
+    name: "Broken Exercise"
+    prop_type: balance
+    requires_equipment: [disabled_item]
+    comfort: 5
+    priority: 0
+
+  # 3 clubs, should be available
+  - id: three_club_cascade
+    name: "3 Club Cascade"
+    prop_type: club
+    quantity_needed: 3
+    comfort: 7
+    priority: 0
+
+  # 3 rings, should be available, excluded when windy
+  - id: three_ring_cascade
+    name: "3 Ring Cascade"
+    prop_type: ring
+    quantity_needed: 3
+    comfort: 5
+    priority: 0
+
+  # high priority exercise
+  - id: high_priority_ex
+    name: "High Priority Exercise"
+    prop_type: ball
+    quantity_needed: 3
+    comfort: 3
+    priority: 9
+    practicing: true
+    always_modify: true
+    modifiers:
+      - left_hand
+      - flash
+
+
+drills:
+  - id: drill_blind_throws
+    name: "Blind Throws"
+    description: "Close eyes and throw"
+    always_modify: true
+    active: true
+    modifiers:
+      - blind
+      - flash
+
+  - id: drill_inactive
+    name: "Inactive Drill"
+    active: false
+
+
+global_modifiers:
+  - "Listen to music"
+  - "No headphones"

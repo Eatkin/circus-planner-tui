@@ -98,22 +98,20 @@ def create_schema(conn: sqlite3.Connection) -> None:
         );
 
         CREATE TABLE IF NOT EXISTS session_log (
-            id                  INTEGER PRIMARY KEY AUTOINCREMENT,
-            session_id          TEXT NOT NULL,
-            logged_at           TEXT NOT NULL,  -- ISO8601
-            exercise_id         TEXT,           -- null if drill
-            drill_id            TEXT,           -- null if exercise
-            equipment_id        TEXT,
-            modifier_id         TEXT,
-            additive_modifier_id TEXT,
-            catches_max         INTEGER,
-            catches_granular    TEXT,           -- pipe-separated e.g. "5|12|28"
-            splits              TEXT,           -- pipe-separated seconds
-            timer_seconds       REAL,
-            comfort_before      INTEGER,
-            comfort_after       INTEGER,
-            notes               TEXT
-            video_path          TEXT
+            id                   INTEGER PRIMARY KEY AUTOINCREMENT,
+            session_id           TEXT NOT NULL,
+            logged_at            TEXT NOT NULL,
+            exercise_id          TEXT,
+            drill_id             TEXT,
+            equipment_id         TEXT,
+            modifiers            TEXT,          -- pipe-separated modifier ids
+            catches_max          INTEGER,
+            catches_granular     TEXT,          -- pipe-separated e.g. "5|12|28"
+            timer_seconds        REAL,
+            comfort_before       INTEGER,
+            comfort_after        INTEGER,
+            notes                TEXT,
+            video_path           TEXT
         );
 
         CREATE TABLE IF NOT EXISTS siteswap (

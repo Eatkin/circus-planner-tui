@@ -1,8 +1,8 @@
-from textual.containers import Center
 from typing import ClassVar
 
 from textual.app import ComposeResult
 from textual.binding import Binding
+from textual.containers import Center
 from textual.widgets import Footer
 from textual.widgets import Header
 from textual.widgets import Label

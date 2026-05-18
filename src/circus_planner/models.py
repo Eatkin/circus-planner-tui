@@ -131,3 +131,13 @@ class Exercise:
             equipment=equipment,
             modifiers=modifiers,
         )
+
+    def extract_core_pattern(self) -> str:
+        """Extract siteswap identity from siteswap string - removes entry / exit throws"""
+        if "siteswap" not in self.prop_type:
+            raise ValueError("Tried to extract siteswap identity from non-siteswap exercise")
+
+        parts = self.id.split("_")
+        if len(parts) == 3:
+            return parts[1]  # "4_5151_2" -> "5151"
+        return parts[0]      # "5151" -> "5151"

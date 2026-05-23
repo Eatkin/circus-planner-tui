@@ -51,7 +51,10 @@ class CatchInputModal(ModalScreen[list[int] | None]):
             yield Label("exercise complete", id="title")
             if self._show_catches:
                 yield Input(placeholder="catches (blank to skip)", id="catch-input")
-            yield Input(placeholder="comfort level (1-10) (blank to skip)", id="comfort-level-input")
+            yield Input(
+                placeholder="comfort level (1-10) (blank to skip)",
+                id="comfort-level-input",
+            )
             yield Input(placeholder="notes (blank to skip)", id="notes-input")
             yield Label("enter to confirm  •  esc to skip", id="hint")
 
@@ -60,7 +63,11 @@ class CatchInputModal(ModalScreen[list[int] | None]):
             self.query_one("#notes-input", Input).focus()
             return
         # notes submitted - we're done
-        catches_raw = self.query_one("#catch-input", Input).value.strip() if self._show_catches else ""
+        catches_raw = (
+            self.query_one("#catch-input", Input).value.strip()
+            if self._show_catches
+            else ""
+        )
         notes_raw = event.value.strip()
         comfort = self.query_one("#comfort-level-input", Input).value.strip()
         try:
@@ -72,18 +79,14 @@ class CatchInputModal(ModalScreen[list[int] | None]):
         except ValueError:
             comfort = None
 
-        self.dismiss((catches, notes_raw or None), comfort) # ty: ignore
+        self.dismiss((catches, notes_raw or None, comfort))  # ty: ignore
 
     def on_mount(self) -> None:
         if self._show_catches:
             self.query_one(Input).focus()
 
-    def on_key(self, event) -> None:
-        if event.key == "enter" and not self._show_catches:
-            self.dismiss(None)
-
     def action_dismiss_none(self) -> None:
-        self.dismiss((None, None, None)) # ty: ignore
+        self.dismiss((None, None, None))  # ty: ignore
 
 
 class QuickCatchModal(ModalScreen[int | None]):

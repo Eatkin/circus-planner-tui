@@ -75,6 +75,10 @@ equipment:
     name: "Unicycle"
     prop_type: other
 
+  - id: cigar_boxes
+    name: "Cigar Boxes"
+    prop_type: other
+
 
 modifiers:
   # ── Style ────────────────────────────────────────────
@@ -850,6 +854,20 @@ exercises:
       - on_bosu_ball
       - on_slackboard
 
+  - id: siteswap_55244
+    name: "55244"
+    prop_type: ball
+    quantity_needed: 4
+    comfort: 1
+    priority: 5
+    practicing: true
+    modifiers:
+      - flash
+      - continuous
+      - on_rolla_bolla
+      - on_bosu_ball
+      - on_slackboard
+
   - id: four_ball_53
     name: "4-Ball 53"
     prop_type: ball
@@ -1107,6 +1125,14 @@ exercises:
       - with_1_ball
       - with_2_balls
       - with_3_balls
+
+  - id: cigar_boxes
+    name: "Cigar Boxes"
+    description: "Play with cigar boxes!"
+    prop_type: flow
+    requires_equipment: [cigar_boxes]
+    comfort: 5
+    priority: 5
 
 
 drills:

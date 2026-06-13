@@ -10,6 +10,27 @@ from circus_planner.models import Exercise
 from circus_planner.models import ResolvedExercise
 
 
+def _get_neglect_weights(conn: sqlite3.Connection) -> dict[str, int]:
+    """Returns {exercise_id: exercises_since_last_practiced}.
+    Higher = more neglected = higher weight boost.
+    Defaults to 50 if never practiced.
+    """
+    rows = conn.execute("""
+        SELECT exercise_id FROM session_log
+        WHERE exercise_id IS NOT NULL
+        ORDER BY id DESC
+        LIMIT 200
+    """).fetchall()
+
+    seen: dict[str, int] = {}
+    for i, row in enumerate(rows):
+        ex_id = row[0]
+        if ex_id not in seen:
+            seen[ex_id] = i
+
+    return seen
+
+
 def get_available_exercises(
     conn: sqlite3.Connection,
     excluded_prop_types: list[str] | None = None,
@@ -41,8 +62,10 @@ def get_available_exercises(
                OR eq.enabled = 1
         """).fetchall()
 
+    neglect = _get_neglect_weights(conn)
+
     return [
-        (row[0], row[3])
+        (row[0], row[3] + neglect.get(row[0], 50))
         for row in rows
         if row[1] not in excluded_prop_types
         and (row[2] == 0 or row[2] <= max_qty.get(row[1], 0))

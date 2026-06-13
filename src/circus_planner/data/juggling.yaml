@@ -841,7 +841,7 @@ exercises:
       - on_slackboard
 
   - id: siteswap_741
-    name: "741"
+    name: "5 741"
     prop_type: ball
     quantity_needed: 4
     comfort: 1

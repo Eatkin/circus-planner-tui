@@ -265,7 +265,7 @@ class ExerciseScreen(BaseScreen):
 
         self.app.push_screen(  # ty: ignore
             CatchInputModal(
-                show_catches=self._exercise.prop_type in ("ball", "club", "ring")
+                show_catches=self._exercise.prop_type in ("ball", "club", "ring", "siteswap")
             ),
             callback=on_dismiss,
         )
